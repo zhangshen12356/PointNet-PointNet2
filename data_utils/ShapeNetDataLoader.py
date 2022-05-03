@@ -96,7 +96,7 @@ class PartNormalDataset(Dataset):
             cls = np.array([cls]).astype(np.int32)
             data = np.loadtxt(fn[1]).astype(np.float32)
             if not self.normal_channel:
-                point_set = data[:, 0:3]
+                point_set = data[:, 0:3]  # [0:3] x,y,z
             else:
                 point_set = data[:, 0:6]
             seg = data[:, -1].astype(np.int32)
@@ -108,8 +108,7 @@ class PartNormalDataset(Dataset):
         # resample
         point_set = point_set[choice, :]
         seg = seg[choice]
-
-        return point_set, cls, seg
+        return point_set, cls, seg  # (2048, 6), (1,), (2048, )
 
     def __len__(self):
         return len(self.datapath)

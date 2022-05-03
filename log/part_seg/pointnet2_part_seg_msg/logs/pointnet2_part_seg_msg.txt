@@ -2579,3 +2579,132 @@
 2021-03-27 11:05:14,628 - Model - INFO - Best accuracy is: 0.94388
 2021-03-27 11:05:14,628 - Model - INFO - Best class avg mIOU is: 0.82608
 2021-03-27 11:05:14,629 - Model - INFO - Best inctance avg mIOU is: 0.85405
+2022-05-02 19:11:06,047 - Model - INFO - PARAMETER ...
+2022-05-02 19:11:06,047 - Model - INFO - Namespace(batch_size=16, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:11:06,247 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:11:06,247 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:11:11,421 - Model - INFO - Use pretrain model
+2022-05-02 19:11:11,422 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 19:11:11,422 - Model - INFO - Learning rate:0.000031
+2022-05-02 19:11:55,002 - Model - INFO - PARAMETER ...
+2022-05-02 19:11:55,002 - Model - INFO - Namespace(batch_size=2, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:11:55,201 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:11:55,201 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:11:57,712 - Model - INFO - Use pretrain model
+2022-05-02 19:11:57,713 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 19:11:57,713 - Model - INFO - Learning rate:0.000031
+2022-05-02 19:13:37,058 - Model - INFO - PARAMETER ...
+2022-05-02 19:13:37,058 - Model - INFO - Namespace(batch_size=2, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:13:37,262 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:13:37,263 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:13:39,829 - Model - INFO - Use pretrain model
+2022-05-02 19:13:39,830 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 19:13:39,830 - Model - INFO - Learning rate:0.000031
+2022-05-02 19:19:28,821 - Model - INFO - PARAMETER ...
+2022-05-02 19:19:28,822 - Model - INFO - Namespace(batch_size=2, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:19:29,021 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:19:29,022 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:19:30,392 - Model - INFO - Use pretrain model
+2022-05-02 19:19:30,393 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 19:19:30,394 - Model - INFO - Learning rate:0.000031
+2022-05-02 19:20:46,558 - Model - INFO - PARAMETER ...
+2022-05-02 19:20:47,753 - Model - INFO - Namespace(batch_size=2, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:21:15,370 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:21:18,856 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:21:35,289 - Model - INFO - Use pretrain model
+2022-05-02 19:25:50,806 - Model - INFO - PARAMETER ...
+2022-05-02 19:25:50,807 - Model - INFO - Namespace(batch_size=2, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:25:51,004 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:25:51,005 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:32:59,158 - Model - INFO - PARAMETER ...
+2022-05-02 19:32:59,159 - Model - INFO - Namespace(batch_size=2, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:32:59,363 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:32:59,363 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:33:01,883 - Model - INFO - Use pretrain model
+2022-05-02 19:33:01,884 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 19:33:01,884 - Model - INFO - Learning rate:0.000031
+2022-05-02 19:37:20,025 - Model - INFO - PARAMETER ...
+2022-05-02 19:37:20,026 - Model - INFO - Namespace(batch_size=2, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:37:20,218 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:37:20,219 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:37:22,149 - Model - INFO - Use pretrain model
+2022-05-02 19:37:22,150 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 19:37:22,150 - Model - INFO - Learning rate:0.000031
+2022-05-02 19:42:10,296 - Model - INFO - PARAMETER ...
+2022-05-02 19:42:10,297 - Model - INFO - Namespace(batch_size=2, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 19:42:10,492 - Model - INFO - The number of training data is: 13998
+2022-05-02 19:42:10,493 - Model - INFO - The number of test data is: 2874
+2022-05-02 19:42:12,992 - Model - INFO - Use pretrain model
+2022-05-02 19:42:12,992 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 19:42:12,992 - Model - INFO - Learning rate:0.000031
+2022-05-02 20:19:09,365 - Model - INFO - Train accuracy is: 0.86239
+2022-05-02 20:22:56,871 - Model - INFO - PARAMETER ...
+2022-05-02 20:22:56,871 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 20:22:57,071 - Model - INFO - The number of training data is: 13998
+2022-05-02 20:22:57,071 - Model - INFO - The number of test data is: 2874
+2022-05-02 20:22:59,636 - Model - INFO - Use pretrain model
+2022-05-02 20:22:59,637 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 20:22:59,637 - Model - INFO - Learning rate:0.000031
+2022-05-02 20:45:24,566 - Model - INFO - PARAMETER ...
+2022-05-02 20:45:24,567 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 20:45:24,762 - Model - INFO - The number of training data is: 13998
+2022-05-02 20:45:24,762 - Model - INFO - The number of test data is: 2874
+2022-05-02 20:45:27,323 - Model - INFO - Use pretrain model
+2022-05-02 20:45:27,324 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 20:45:27,324 - Model - INFO - Learning rate:0.000031
+2022-05-02 20:46:28,376 - Model - INFO - PARAMETER ...
+2022-05-02 20:46:28,377 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 20:46:28,571 - Model - INFO - The number of training data is: 13998
+2022-05-02 20:46:28,572 - Model - INFO - The number of test data is: 2874
+2022-05-02 20:46:31,122 - Model - INFO - Use pretrain model
+2022-05-02 20:46:31,123 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 20:46:31,123 - Model - INFO - Learning rate:0.000031
+2022-05-02 20:47:33,619 - Model - INFO - PARAMETER ...
+2022-05-02 20:47:33,619 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 20:47:33,813 - Model - INFO - The number of training data is: 13998
+2022-05-02 20:47:33,813 - Model - INFO - The number of test data is: 2874
+2022-05-02 20:47:36,351 - Model - INFO - Use pretrain model
+2022-05-02 20:47:36,352 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 20:47:36,352 - Model - INFO - Learning rate:0.000031
+2022-05-02 20:57:23,435 - Model - INFO - PARAMETER ...
+2022-05-02 20:57:23,436 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 20:57:23,631 - Model - INFO - The number of training data is: 13998
+2022-05-02 20:57:23,632 - Model - INFO - The number of test data is: 2874
+2022-05-02 20:57:26,298 - Model - INFO - Use pretrain model
+2022-05-02 20:57:26,299 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 20:57:26,300 - Model - INFO - Learning rate:0.000031
+2022-05-02 20:59:15,825 - Model - INFO - PARAMETER ...
+2022-05-02 20:59:15,825 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 20:59:16,020 - Model - INFO - The number of training data is: 13998
+2022-05-02 20:59:16,020 - Model - INFO - The number of test data is: 2874
+2022-05-02 20:59:17,981 - Model - INFO - Use pretrain model
+2022-05-02 20:59:17,981 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 20:59:17,982 - Model - INFO - Learning rate:0.000031
+2022-05-02 21:01:58,932 - Model - INFO - PARAMETER ...
+2022-05-02 21:01:58,933 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-02 21:01:59,125 - Model - INFO - The number of training data is: 13998
+2022-05-02 21:01:59,126 - Model - INFO - The number of test data is: 2874
+2022-05-02 21:02:01,763 - Model - INFO - Use pretrain model
+2022-05-02 21:02:01,764 - Model - INFO - Epoch 1 (106/251):
+2022-05-02 21:02:01,764 - Model - INFO - Learning rate:0.000031
+2022-05-03 10:06:55,286 - Model - INFO - PARAMETER ...
+2022-05-03 10:06:55,287 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-03 10:06:55,497 - Model - INFO - The number of training data is: 13998
+2022-05-03 10:06:55,497 - Model - INFO - The number of test data is: 2874
+2022-05-03 10:06:58,150 - Model - INFO - Use pretrain model
+2022-05-03 10:06:58,151 - Model - INFO - Epoch 1 (106/251):
+2022-05-03 10:06:58,151 - Model - INFO - Learning rate:0.000031
+2022-05-03 10:08:20,105 - Model - INFO - PARAMETER ...
+2022-05-03 10:08:20,105 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-03 10:08:20,299 - Model - INFO - The number of training data is: 13998
+2022-05-03 10:08:20,299 - Model - INFO - The number of test data is: 2874
+2022-05-03 10:08:22,809 - Model - INFO - Use pretrain model
+2022-05-03 10:08:22,810 - Model - INFO - Epoch 1 (106/251):
+2022-05-03 10:08:22,810 - Model - INFO - Learning rate:0.000031
+2022-05-03 10:37:47,329 - Model - INFO - PARAMETER ...
+2022-05-03 10:37:47,329 - Model - INFO - Namespace(batch_size=1, decay_rate=0.0001, epoch=251, gpu='0', learning_rate=0.001, log_dir='pointnet2_part_seg_msg', lr_decay=0.5, model='pointnet2_part_seg_msg', normal=True, npoint=2048, optimizer='Adam', step_size=20)
+2022-05-03 10:37:47,525 - Model - INFO - The number of training data is: 13998
+2022-05-03 10:37:47,525 - Model - INFO - The number of test data is: 2874
+2022-05-03 10:37:50,019 - Model - INFO - Use pretrain model
+2022-05-03 10:37:50,020 - Model - INFO - Epoch 1 (106/251):
+2022-05-03 10:37:50,020 - Model - INFO - Learning rate:0.000031

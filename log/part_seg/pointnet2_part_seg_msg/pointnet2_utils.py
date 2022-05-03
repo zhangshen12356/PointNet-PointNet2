@@ -49,6 +49,8 @@ def index_points(points, idx):
     Return:
         new_points:, indexed points data, [B, S, C]
     """
+    import pdb
+    pdb.set_trace()
     device = points.device
     B = points.shape[0]
     view_shape = list(idx.shape)
@@ -68,19 +70,21 @@ def farthest_point_sample(xyz, npoint):
     Return:
         centroids: sampled pointcloud index, [B, npoint]
     """
+    # import pdb
+    # pdb.set_trace()
     device = xyz.device
     B, N, C = xyz.shape
-    centroids = torch.zeros(B, npoint, dtype=torch.long).to(device)
-    distance = torch.ones(B, N).to(device) * 1e10
-    farthest = torch.randint(0, N, (B,), dtype=torch.long).to(device)
+    centroids = torch.zeros(B, npoint, dtype=torch.long).to(device)  # torch.Size([1, 512])
+    distance = torch.ones(B, N).to(device) * 1e10  # torch.Size([1, 2048])
+    farthest = torch.randint(0, N, (B,), dtype=torch.long).to(device)  # torch.Size([1])
     batch_indices = torch.arange(B, dtype=torch.long).to(device)
     for i in range(npoint):
         centroids[:, i] = farthest
-        centroid = xyz[batch_indices, farthest, :].view(B, 1, 3)
-        dist = torch.sum((xyz - centroid) ** 2, -1)
-        mask = dist < distance
-        distance[mask] = dist[mask]
-        farthest = torch.max(distance, -1)[1]
+        centroid = xyz[batch_indices, farthest, :].view(B, 1, 3)  # torch.Size([1, 1, 3])  将farthest这个点作为中心点
+        dist = torch.sum((xyz - centroid) ** 2, -1)  # 所有点与中心点的距离 torch.Size([1, 2048])
+        mask = dist < distance  # 这一步不是太理解？？？
+        distance[mask] = dist[mask]  # 将distance中的所有点复制为所有点距离当前中心点的距离
+        farthest = torch.max(distance, -1)[1]  # 找到最大距离的索引
     return centroids
 
 
@@ -195,7 +199,7 @@ class PointNetSetAbstraction(nn.Module):
         new_points = new_points.permute(0, 3, 2, 1) # [B, C+D, nsample,npoint]
         for i, conv in enumerate(self.mlp_convs):
             bn = self.mlp_bns[i]
-            new_points =  F.relu(bn(conv(new_points)), inplace=True)
+            new_points =  F.relu(bn(conv(new_points)))
 
         new_points = torch.max(new_points, 2)[0]
         new_xyz = new_xyz.permute(0, 2, 1)
@@ -222,6 +226,8 @@ class PointNetSetAbstractionMsg(nn.Module):
             self.bn_blocks.append(bns)
 
     def forward(self, xyz, points):
+        # import pdb
+        # pdb.set_trace()
         """
         Input:
             xyz: input points position data, [B, C, N]
@@ -232,7 +238,7 @@ class PointNetSetAbstractionMsg(nn.Module):
         """
         xyz = xyz.permute(0, 2, 1)
         if points is not None:
-            points = points.permute(0, 2, 1)
+            points = points.permute(0, 2, 1)  # torch.Size([1, 2048, 6])
 
         B, N, C = xyz.shape
         S = self.npoint
@@ -253,7 +259,7 @@ class PointNetSetAbstractionMsg(nn.Module):
             for j in range(len(self.conv_blocks[i])):
                 conv = self.conv_blocks[i][j]
                 bn = self.bn_blocks[i][j]
-                grouped_points =  F.relu(bn(conv(grouped_points)), inplace=True)
+                grouped_points =  F.relu(bn(conv(grouped_points)))
             new_points = torch.max(grouped_points, 2)[0]  # [B, D', S]
             new_points_list.append(new_points)
 
@@ -311,6 +317,6 @@ class PointNetFeaturePropagation(nn.Module):
         new_points = new_points.permute(0, 2, 1)
         for i, conv in enumerate(self.mlp_convs):
             bn = self.mlp_bns[i]
-            new_points = F.relu(bn(conv(new_points)), inplace=True)
+            new_points = F.relu(bn(conv(new_points)))
         return new_points
 
